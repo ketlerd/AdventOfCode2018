@@ -1,11 +1,8 @@
 import sys
 
-
 freq = 0
-results = set([])
+results = set()
 duplicate = False
-
-file = open(sys.argv[1], 'r')
 
 while duplicate != True:
     with open(sys.argv[1]) as f:
@@ -17,5 +14,4 @@ while duplicate != True:
                 break
 
             results.add(freq)
-
 print(freq)
